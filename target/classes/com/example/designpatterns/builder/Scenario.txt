@@ -1,0 +1,22 @@
+Problem Scenario: Building a Customizable Meal Order
+
+Imagine you're tasked with designing a system for a restaurant to handle meal orders. Each meal can have multiple components like a main dish, side dish, drink, and dessert. However, customers have varying preferences, and not all components are mandatory. Additionally, some customers may have dietary restrictions or special requests.
+
+Requirements:
+
+Meals should be customizable, allowing customers to choose their preferred components.
+Each component (main dish, side dish, drink, dessert) should be optional, and customers should be able to choose any combination of components.
+Some customers may have dietary restrictions (e.g., vegetarian, gluten-free), and the system should accommodate these restrictions.
+The system should support adding special requests or notes to the order.
+
+classes and functions you might need to implement for the given problem scenario:
+
+MealBuilder: This class serves as the main builder for constructing meal orders. It provides methods to add optional components such as main dish, side dish, drink, and dessert. It also handles any special requests or notes associated with the order.
+
+Meal: This class represents the final meal order. It contains attributes for each optional component (main dish, side dish, drink, dessert) and any special requests or notes.
+
+MainDish, SideDish, Drink, Dessert: These classes represent the various components of a meal. Each class should include properties such as name, description, and dietary information (e.g., vegetarian, gluten-free).
+
+SpecialRequest: This class represents any special requests or notes associated with the meal order. It includes properties such as the description of the request.
+
+MealOrderDirector: (Optional) This class acts as a director, providing a higher-level interface for constructing complex meal orders. It may offer predefined meal configurations or workflows for creating orders.
