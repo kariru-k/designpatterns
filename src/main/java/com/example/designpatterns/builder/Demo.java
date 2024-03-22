@@ -7,7 +7,7 @@ import com.example.designpatterns.builder.components.dishes.SideDish;
 public class Demo {
     public static void main(String[] args) {
 
-        //Using a director
+        //* Using a director
         MealDirector director = new MealDirector();
         MealBuilder builder = new MealBuilder();
         director.constructStreetwiseThree(builder);
@@ -18,7 +18,7 @@ public class Demo {
         System.out.println(firstMeal.getDrink().getName());
         System.out.println(firstMeal.getDessert().getName());
 
-        //Using the builder directly
+        //* Using the builder directly
         MealBuilder seconBuilder = new MealBuilder();
         seconBuilder.setMainDish(new MainDish("Pizza", null, null));
         seconBuilder.setSideDish(new SideDish("Garlic Bread", null, null));
